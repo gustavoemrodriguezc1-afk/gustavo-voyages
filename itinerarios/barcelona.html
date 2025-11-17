@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Barcelona & Costa Brava - Gus Voyages. 6 días: arquitectura, cultura y litoral." />
+  <title>Barcelona & Costa Brava | Gustavo Voyages</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <div>
+      <h1 class="brand">Gustavo Voyages</h1>
+      <p class="tagline">Desde Venezuela hacia el Mediterráneo y Europa — viajes con propósito</p>
+    </div>
+
+    <!-- Botón hamburguesa: se muestra en pantallas pequeñas -->
+    <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Abrir menú">
+      <span class="hamburger" aria-hidden="true"></span>
+    </button>
+
+    <nav class="main-nav" role="navigation" aria-label="Menú Principal">
+      <ul id="primary-navigation" class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#paquetes">Paquetes</a></li>
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container" id="main">
+    <section class="section">
+      <h2>Barcelona & Costa Brava — 6 días</h2>
+      <p class="lead">Combinación de ciudad y litoral: Gaudí, barrios con vida y la espectacular Costa Brava.</p>
+
+      <div class="card" style="margin-top:1rem">
+        <img src="../agencia-de-viajes-img/barcelona.webp" alt="Sagrada Familia y Barcelona" loading="lazy">
+        <div style="padding:1rem">
+          <h3>Resumen del viaje</h3>
+          <p>Visitas a monumentos emblemáticos, paseos por barrios tradicionales y excursión a calas de la Costa Brava.</p>
+
+          <h3>Itinerario día a día</h3>
+          <ol>
+            <li><strong>Día 1:</strong> Llegada y paseo por Las Ramblas.</li>
+            <li><strong>Día 2:</strong> Sagrada Familia, Park Güell y rutas modernistas.</li>
+            <li><strong>Día 3:</strong> Barrio Gótico y museos.</li>
+            <li><strong>Día 4:</strong> Excursión a la Costa Brava.</li>
+            <li><strong>Día 5:</strong> Tiempo libre y experiencia gastronómica.</li>
+            <li><strong>Día 6:</strong> Regreso.</li>
+          </ol>
+
+          <h3>Incluye</h3>
+          <ul>
+            <li>Alojamiento y traslados según paquete</li>
+            <li>Guía local en español (días principales)</li>
+          </ul>
+
+          <p><strong>Precio referencial:</strong> desde USD 820 (sujeto a temporada)</p>
+
+          <a class="btn-primary" href="../reserva.html#reserva" aria-label="Solicitar cotización Barcelona">Solicitar cotización</a>
+        </div>
+      </div>
+
+      <section style="margin-top:1rem">
+        <h3>Galería</h3>
+        <div class="gallery-grid" style="grid-template-columns:repeat(3,1fr);gap:0.5rem">
+          <figure class="card"><img src="../agencia-de-viajes-img/barca-1.webp" alt="Park Güell" loading="lazy"></figure>
+          <figure class="card"><img src="../agencia-de-viajes-img/barca-2.webp" alt="Costa Brava cala" loading="lazy"></figure>
+          <figure class="card"><img src="../agencia-de-viajes-img/barca-3.webp" alt="Atardecer en Barcelona" loading="lazy"></figure>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Gustavo Voyages</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

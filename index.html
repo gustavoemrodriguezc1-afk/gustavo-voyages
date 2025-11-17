@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Gus Voyages — Agencia de viajes desde Venezuela al Mediterráneo y Europa. Paquetes personalizados y tours premium." />
+  <title>Gustavo Voyages | Viajes Venezuela → Mediterráneo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+  <div class="container header-inner">
+    <div>
+      <h1 class="brand">Gustavo Voyages</h1>
+      <p class="tagline">Desde Venezuela hacia el Mediterráneo y Europa — viajes con propósito</p>
+    </div>
+
+    <!-- Botón hamburguesa: se muestra en pantallas pequeñas -->
+    <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Abrir menú">
+      <span class="hamburger" aria-hidden="true"></span>
+    </button>
+
+    <nav class="main-nav" role="navigation" aria-label="Menú Principal">
+      <ul id="primary-navigation" class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#paquetes">Paquetes</a></li>
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main id="main">
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Viajes desde Venezuela hacia el Mediterráneo</h2>
+          <p>Itinerarios a medida: cultura, gastronomía y playas al sur de Europa. Te ayudamos con vuelos, traslados y guías locales.</p>
+          <a class="btn-primary" href="#paquetes">Ver Paquetes</a>
+        </div>
+        <div class="hero-image">
+          <img src="./agencia-de-viajes-img/hero.webp" alt="Playa y ciudad mediterránea" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="paquetes" class="section-light">
+      <div class="container">
+        <h2>Nuestros Paquetes</h2>
+        <p>Paquetes pensados para grupos, parejas y viajeros independientes.</p>
+        <ul class="packages-list">
+          <li><a href="paquetes/group-travels.html">Viajes en grupo</a></li>
+          <li><a href="paquetes/private-tours.html">Tours privados</a></li>
+          <li><a href="paquetes/mediterraneo-express.html">Mediterráneo Express</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="destinos" class="section">
+      <div class="container">
+        <h2>Itinerarios destacados</h2>
+        <p class="lead">Haz clic para ver más detalles y reservar</p>
+
+        <div class="gallery-grid">
+          <figure class="card">
+            <a href="itinerarios/roma.html" aria-label="Ver detalles Roma Clásica">
+              <img src="agencia-de-viajes-img/Coliseo-Romano.webp" alt="Coliseo Romano, Roma" loading="lazy">
+            </a>
+            <figcaption>
+              <strong>Roma Clásica</strong>
+              <span class="muted">7 días · Historia y gastronomía</span>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <a href="itinerarios/mediterraneo.html" aria-label="Ver detalles Mediterráneo">
+              <img src="agencia-de-viajes-img/mediterraneo.webp" alt="Costa del Mediterráneo" loading="lazy">
+            </a>
+            <figcaption>
+              <strong>Mediterráneo Escape</strong>
+              <span class="muted">8 días · Playas y pueblos costeros</span>
+            </figcaption>
+          </figure>
+
+             <figure class="card">
+            <a href="itinerarios/barcelona.html" aria-label="Ver detalles Barcelona">
+              <img src="agencia-de-viajes-img/barcelona.webp" alt="Sagrada Familia, Barcelona" loading="lazy">
+            </a>
+            <figcaption>
+              <strong>Barcelona & Costa Brava</strong>
+              <span class="muted">6 días · Ciudad y litoral</span>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <a href="itinerarios/los-roques.html" aria-label="Ver Los Roques (Venezuela)">
+              <img src="agencia-de-viajes-img/archipielago-Los-Roques.webp" alt="Los Roques, Venezuela" loading="lazy">
+            </a>
+            <figcaption>
+              <strong>Los Roques</strong>
+              <span class="muted">4 días · Caribe venezolano (vista previa)</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section-light">
+      <div class="container">
+        <h2>Sobre Gustavo Voyages</h2>
+        <p>Soy Gustavo Rodríguez — estudiando Ingeniería en Informática. Creo experiencias de viaje seguras y auténticas, con un enfoque en viajeros venezolanos que quieren conocer Europa y el Mediterráneo.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h3>Contacto</h3>
+          <p>Escríbenos: <a href="mailto:gustavoemrodriguezc.1@gmail.com">gustavoemrodriguezc.1@gmail.com</a></p>
+          <p>Teléfono / WhatsApp: +58 412 1788567</p>
+        </div>
+        <div>
+          <h3>Reserva rápida</h3>
+          <form action="reserva.html" method="get" class="simple-form" aria-label="Formulario de reserva rápida">
+            <label for="destino">Destino</label>
+            <select id="destino" name="destino">
+              <option value="roma">Roma</option>
+              <option value="mediterraneo">Mediterráneo</option>
+              <option value="barcelona">Barcelona</option>
+              <option value="los-roques">Los Roques</option>
+            </select>
+
+            <label for="fecha">Fecha preferida</label>
+            <input id="fecha" name="fecha" type="date">
+
+            <button class="btn-secondary" type="submit">Solicitar cotización</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Gustavo Voyages — Hecho por Gustavo Rodríguez</p>
+    </div>
+  </footer>
+
+  <script>
+    // año dinámico 
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
